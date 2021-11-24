@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png" />
+    <title>KAT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/flav.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body class="stop-body-scroll">
+    <!-- Main Content -->
+    <div class="hide-other-web-content" id="main-content">
+        <!-- header start -->
+        <header>
+            <div class="main-header">
+                <div class="container-lg">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <!-- mobile hamburg menu -->
+                        <div class="col-4 d-md-none justify-content-start align-content-center">
+                            <svg style="cursor: pointer" id="openMenu" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="var(--primary)" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        </div>
+                        <!-- logo col -->
+                        <div class="col-md-2 col-4 text-center text-md-left mr-auto">
+                            <div class="logo">
+                                <a href="/">
+                                    <img src="assets/images/logo/logo.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- desktop menu col -->
+                        <div class="col-md-10 d-none d-md-block text-center">
+                            <nav class="mx-auto my-auto nav-bars-top d-flex align-content-center justify-content-center align-items-center">
+                                <ul class="my-auto">
+                                    <li><a class="white" href="index.html#products">PRODUCTS</a></li>
+                                    <li><a class="white" href="index.html#about">ABOUT</a></li>
+                                    <li><a class="white" href="flavours.html" target="_blank">FLAVOURS</a></li>
+                                    <li> <a class="white" href="index.html#contact">Contact</a></li>
+                                    <li><a class="white" href="index.html#distributors">DISTRIBUTORS</a></li>
+                                </ul>
+                                <!-- <a class="email-icon-top d-flex" href="#">
+                                    <img class="my-auto mx-auto" src="assets//images/icons/email.svg" alt="KAT" />
+                                </a> -->
+                            </nav>
+                        </div>
+                        <!-- mobile email right col -->
+                        <div class="col-4 d-flex justify-content-end align-content-center d-md-none">
+                            <!-- <a class="email-icon-top d-flex" href="#">
+                                <img class="my-auto mx-auto" src="assets//images/icons/email.svg" alt="KAT" />
+                            </a> -->
+                        </div>
+                        <!-- mobile Menu col start-->
+                        <div class="mobile-menu-wrapper closedMenu" id="menuMob">
+                            <div class="row pt-4 pb-2">
+                                <!-- mobile hamburg menu -->
+                                <div class="pl-4 col-4 align-items-center d-flex justify-content-start align-content-center">
+                                    <svg class="btn" id="closeMenu" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="var(--primary)" viewBox="0 0 16 16">
+                                        <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                                    </svg>
+                                </div>
+                                <!-- logo col -->
+                                <div class="col-4 align-items-center">
+                                    <div class="logo">
+                                        <a href="/">
+                                            <img src="assets/images/logo/logo.svg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- mobile email right col -->
+                                <!-- <div class="pr-4 align-items-center col-4 d-flex justify-content-end align-content-center">
+                                    <a class="email-icon-top d-flex" href="#">
+                                        <img class="my-auto mx-auto" src="assets//images/icons/email.svg" alt="KAT" />
+                                    </a>
+                                </div> -->
+                            </div>
+                            <div class="row mob-nav-row">
+                                <!-- nav bar mobil -->
+                                <div class="col-12 p-5">
+                                    <nav class="mx-auto my-5 nav-bars-top-mob d-flex flex-column  justify-content-center align-items-center">
+                                        <ul class="my-auto">
+                                            <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="index.html#products">PRODUCTS</a>
+                                            </li>
+                                            <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="index.html#about">ABOUT</a>
+                                            </li>
+                                            <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="flavours.html" target="_blank">FLAVOURS</a>
+                                            </li>
+                                            <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="index.html#contact">Contact</a>
+                                            </li>
+                                            <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="index.html#distributors">DISTRIBUTORS</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile Menu col end-->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <section class="flavours-sec slider-load">
+            <div class="container-lg">
+                <div class="row mx-0 my-0">
+                    <div class="flavSlider"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="flav-nav-sec slider-load d-none">
+            <div class="container-fluid px-0">
+                <div class="flav-nav slider">
+                </div>
+            </div>
+        </section> -->
+        <!-- <section class="loading-sec">
+            <div class="loader d-block">
+
+            </div>
+        </section> -->
+        <!-- Footer start -->
+        <footer>
+            <div class="container-lg py-5">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-lg-4 d-flex justify-content-center py-3 px-2 align-items-center">
+                        <a href="https://instagram.com/kat_vapes?utm_medium=copy_link">
+                            <img class="px-3 btn" src="assets/images/icons/soc-1.svg" alt="Instagram" />
+                        </a>
+                        <!-- <img class="px-3 btn" src="assets/images/icons/soc-2.svg" alt="facebook" /> -->
+                        <!-- <img class="px-3 btn" src="assets/images/icons/soc-3.svg" alt="twitter" /> -->
+                    </div>
+                    <div class="col-lg-8">
+                        <ul class="d-md-flex d-block pt-2 justify-content-end align-items-center">
+                            <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="index.html#about">ABOUT</a>
+                            </li>
+                            <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="index.html#products">PRODUCTS</a>
+                            </li>
+                            <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="flavours.html" target="_blank">FLAVOURS</a>
+                            </li>
+                            <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="index.html#contact">Contact</a>
+                            </li>
+                            <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="index.html#distributors">DISTRIBUTORS</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 px-3 pt-3 mt-2">
+                        <span class="text-white d-block mx-auto text-center">© 2021 KAT All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+
+    <!-- Starting video sec Start -->
+    <section data-aos="fade" class="starting-video-sec" id="onLoadScreen">
+        <div class="top-warning">
+            <div class="container-fluid">
+                <span>WARNING: </span> This product contains nicotine. Nicotine is an addictive chemical.
+            </div>
+        </div>
+        <video data-aos-delay="500" data-aos="fade" class="hero-cover-video" autoplay muted poster="assets/images/smogPoster.png" loop>
+            <source src="assets/videos/smog.mp4" type="video/mp4" />
+        </video>
+        <div class="container">
+            <div class="row content d-flex flex-column justify-content-center align-items-center">
+                <div data-aos-duration="500" data-aos-delay="700" data-aos="zoom-in" class="logo starting-logo">
+                    <img src="assets/images/logo/logo.svg" alt="" />
+                </div>
+                <h2 data-aos-duration="500" data-aos-delay="450" data-aos="fade-up" class="neon-heading text-center">
+                    KAT THE EXPERIENCE
+                </h2>
+                <div data-aos="fade" data-aos-delay="200" class="scrol-to-dicover" onclick="showWeb(event,true)">
+                    <h6 class="text-uppercase text-white">SCROLL TO DISCOVER</h6>
+                    <img src="assets/images/icons/arrow.png" alt="Scroll down" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Starting video sec End -->
+
+    <!-- Age ask Pop up Start-->
+    <section class="age-ask-popup d-none fademy">
+        <div class="age-pop fademy">
+            <div class="age-logo fademy fadeUp">
+                <img src="assets/images/logo/logo.png" alt="KAT" />
+            </div>
+            <div class="age-pop-qs fademy">
+                <p class="text-white text-center mt5">Are you 21 years of age older?</p>
+            </div>
+            <div class="loader"></div>
+            <p class="invalid-feedback age-error mx-auto text-center d-none">
+                You are not old enough to view this content
+            </p>
+            <div class="age-pop-btns text-center mt-4 fademy">
+                <button class="btn btn-outline-light rounded-pill px-4 text-uppercase" id="yesBtn">YES</button> &nbsp;
+                <button class="btn btn-outline-light rounded-pill px-4 text-uppercase" id="noBtn">NO</button>
+            </div>
+        </div>
+        <div class="over-lay-of-pop"></div>
+    </section>
+    <!-- Age ask Pop up End-->
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        let dataForSlider = [{
+                smImg: "banana.png",
+                img: "1.png",
+                bgColorImg: "MANGOBG.jpg",
+                heading: "Banana Ice",
+                color: "#f8da48",
+                // title: "Product Details",
+                // desc: "Tropically floral with a hint of tart citrus, our mango is sweet, juicy and undeniably delicious.",
+
+            }, {
+                smImg: "MANGO.png",
+                img: "2.png",
+                bgColorImg: "MELONICEBG.jpg",
+                heading: "Mango Ice",
+                color: "#d9e869",
+                // title: "Product Details",
+                // desc: "Always satisfyingly sweet and juicy, enjoy the distinct flavor of cantaloupe with a crisp minty finish.",
+            }, {
+                smImg: "MINTICE.png",
+                img: "3.png",
+                bgColorImg: "MINTICEBG.jpg",
+                heading: "Strawberry guava Ice",
+                color: "#83d412",
+                // title: "Product Details",
+                // desc: "Always satisfyingly sweet and juicy, enjoy the distinct flavor of cantaloupe with a crisp minty finish.",
+
+            }, {
+                smImg: "PINACOLADA.png",
+                img: "cool.png",
+                bgColorImg: "PINACOLADABG.jpg",
+                heading: "Cool Mint",
+                color: "#f8e6c2",
+                // title: "Product Details",
+                // desc: "Escape to a paradise island with the perfect combination of coconut and pineapple flavors.",
+
+            }, {
+                smImg: "purplerain.png",
+                img: "5.png",
+                bgColorImg: "PINKLEMONADEBG.jpg",
+                heading: "blueberry  Ice",
+                color: "##fbc7cb",
+                // title: "Product Details",
+                // desc: "Undeniably sweet sugar and deliciously tart lemon meet to create that classic pink lemonade flavor.",
+
+            }, {
+                smImg: "PURPLERAIN.png",
+                img: "6.png",
+                bgColorImg: "PURPLERAINBG.jpg",
+                heading: "Lychee ICe",
+                color: "#8b55a9",
+                // title: "Product Details",
+                // desc: "Mixed berries including raspberry, blueberry and blackberry create the perfect combination of sweet and tart flavors. ",
+
+            }, {
+                smImg: "PINAPPLEICE.png",
+                img: "7.png",
+                bgColorImg: "PURPLERAINBG.jpg",
+                heading: "Blue Razz  ICE",
+                color: "#8b55a9",
+                // title: "Product Details",
+                // desc: "Sweet and slightly tart pineapple meets a fresh minty finish, delivering a satisfying balance to every puff.",
+
+            }, {
+                smImg: "STRAWBERRY.png",
+                img: "8.png",
+                bgColorImg: "STRAWBERRYBG.jpg",
+                heading: "LUSH ICE",
+                color: "#fbc7cb",
+                // title: "Product Details",
+                // desc: "Sweet and slightly tart pineapple meets a fresh minty finish, delivering a satisfying balance to every puff.",
+
+            }, {
+                smImg: "grape.png",
+                img: "9.png",
+                bgColorImg: "TANGERINEICEBG.jpg",
+                heading: "Grape ICE",
+                color: "#ffc300",
+                // title: "Product Details",
+                // desc: "Sweet and slightly tart pineapple meets a fresh minty finish, delivering a satisfying balance to every puff.",
+
+            }, {
+                smImg: "black.png",
+                img: "10.png",
+                bgColorImg: "MANGOBG.jpg",
+                heading: "Blackberry Ice",
+                color: "#f8da48",
+                // title: "Product Details",
+                // desc: "Tropically floral with a hint of tart citrus, our mango is sweet, juicy and undeniably delicious.",
+
+            },
+            // {
+            //     smImg: "STRAWBERRY.png",
+            //     img: "6.png",
+            //     bgColorImg: "STRAWBERRYBG.jpg",
+            //     heading: "LYCHEE ICE",
+            //     color: "#ffc300",
+            //     title: "Product Details",
+            //     desc: "Sweet and slightly tart pineapple meets a fresh minty finish, delivering a satisfying balance to every puff.",
+
+            // },
+        ]
+
+        function makeSlider() {
+            dataForSlider.forEach((elem, ind) => {
+                document.querySelector('.flavSlider').innerHTML +=
+                    `
+                <div class="row my-0 mx-0 flav-left-side  d-flex justify-content-center align-items-center">
+                    <div class="col-md-6 col-12 ">
+                        <h1 style="color: ${elem.color}">${elem.heading}</h1>
+                     
+                        </div>
+                    <div class="col-md-6 col-12 flav-right-side" style="background: url(assets/images/flavours/bgs/${elem.bgColorImg}) no-repeat;">
+                        <img src="assets/images/flavours/${elem.img}" alt=${elem.heading}>
+                    </div>
+                </div>
+            `
+
+            });
+            const slider = $(".flavSlider");
+            slider.slick({
+                slidesToShow: 1,
+                // slidesToScroll: 1,
+                arrows: false,
+                fade: false,
+                touchMove: true,
+                // asNavFor: ".flav-nav",
+                // speed: 900,
+                // autoplay: true,
+                // initialSlide: 1,
+                swipe: true,
+                // loadIndex: 0,
+                // currentSlide: 1,
+                // autoplaySpeed: 2000,
+            });
+        }
+
+
+        // function makeSliderBottom() {
+        //     dataForSlider.forEach((elem, ind) => {
+        //         document.querySelector('.flav-nav').innerHTML += `
+        //         <div class="flav-nav-box">
+        //             <img src="assets/images/flavours/smImg/${elem.smImg}" alt=${elem.heading}>
+        //             <span>${elem.heading}</span>
+        //         </div>
+        //     `
+        //     });
+
+        // }
+
+
+        // makeSliderBottom();
+
+        // 
+
+
+
+        // slider.on('wheel', (function(e) {
+        //     e.preventDefault();
+        //     if (e.originalEvent.deltaY < 0) {
+        //         $(this).slick('slickNext');
+        //     } else {
+        //         $(this).slick('slickPrev');
+        //     }
+        // }));
+        // $(".flav-nav").slick({
+        //     slidesToShow: 9,
+        //     slidesToScroll: 1,
+        //     asNavFor: ".flavSlider",
+        //     dots: false,
+        //     arrows: false,
+        //     focusOnSelect: true,
+        //     responsive: [{
+        //         breakpoint: 992,
+        //         settings: {
+        //             slidesToShow: 6,
+        //             slidesToScroll: 1
+        //         }
+        //     }, {
+        //         breakpoint: 768,
+        //         settings: {
+        //             slidesToShow: 3,
+        //             slidesToScroll: 1
+        //         }
+        //     }, {
+        //         breakpoint: 400,
+        //         settings: {
+        //             slidesToShow: 2,
+        //             slidesToScroll: 1
+        //         }
+        //     }, ]
+        // });
+
+        // $("a[data-slide]").click(function(e) {
+        //     e.preventDefault();
+        //     var slideno = $(this).data("slide");
+        //     $(".flav-nav").slick("slickGoTo", slideno - 1);
+        // });
+    </script>
+
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

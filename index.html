@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png" />
+    <title>KAT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/styleswiper-bundle.min.css" />
+    <link href="assets/css/aos.css" rel="stylesheet" />
+</head>
+
+<body class="stop-body-scroll">
+
+    <!-- MAIN CONTENT -->
+    <div class="hide-other-web-content" id="main-content">
+        <!-- header start -->
+        <header>
+            <div class="top-warning">
+                <div class="container-fluid">
+                    <span>WARNING: </span> This product contains nicotine. Nicotine is an addictive chemical.
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="container-lg">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <!-- mobile hamburg menu -->
+                        <div class="col-4 d-md-none justify-content-start align-content-center">
+                            <svg style="cursor: pointer" id="openMenu" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="var(--primary)" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        </div>
+                        <!-- logo col -->
+                        <div class="col-md-2 col-4 text-center text-md-left mr-auto">
+                            <div class="logo">
+                                <a href="/">
+                                    <img src="assets/images/logo/logo.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- desktop menu col -->
+                        <div class="col-md-10 d-none d-md-block text-center">
+                            <nav class="mx-auto my-auto nav-bars-top d-flex  justify-content-end align-items-center">
+                                <ul class="my-auto">
+                                    <li><a class="white" href="#products">PRODUCTS</a></li>
+                                    <li><a class="white" href="#about">ABOUT</a></li>
+                                    <li><a class="white" href="flavours.html" target="_blank">FLAVOURS</a></li>
+                                    <!-- <li> <a class="white" href="#contact">Contact</a></li> -->
+                                    <li><a class="white" href="#distributors">DISTRIBUTORS</a></li>
+                                </ul>
+                                <!-- <a class="email-icon-top d-flex" href="">
+                                    <img class="my-auto mx-auto" src="assets//images/icons/email.svg" alt="KAT" />
+                                </a> -->
+                            </nav>
+                        </div>
+                        <!-- mobile email right col -->
+                        <!-- <div class="col-4 d-flex justify-content-end align-content-center d-md-none">
+                            <a class="email-icon-top d-flex" href="">
+                                <img class="my-auto mx-auto" src="assets//images/icons/email.svg" alt="KAT" />
+                            </a>
+                        </div> -->
+                        <!-- mobile Menu col start-->
+                        <div class="mobile-menu-wrapper closedMenu" id="menuMob">
+                            <div class="row pt-4 pb-2">
+                                <!-- mobile hamburg menu -->
+                                <div class="pl-4 col-4 align-items-center d-flex justify-content-start align-content-center">
+                                    <svg class="btn" id="closeMenu" xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="var(--primary)" viewBox="0 0 16 16">
+                                        <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                                    </svg>
+                                </div>
+                                <!-- logo col -->
+                                <div class="col-4 align-items-center">
+                                    <div class="logo">
+                                        <a href="/">
+                                            <img src="assets/images/logo/logo.svg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- mobile email right col -->
+                                <!-- <div class="pr-4 align-items-center col-4 d-flex justify-content-end align-content-center">
+                                    <a class="email-icon-top d-flex" href="">
+                                        <img class="my-auto mx-auto" src="assets//images/icons/email.svg" alt="KAT" />
+                                    </a>
+                                </div> -->
+                            </div>
+                            <div class="row mob-nav-row">
+                                <!-- nav bar mobil -->
+                                <div class="col-12 p-5">
+                                    <nav class="mx-auto my-5 nav-bars-top-mob d-flex flex-column  justify-content-center align-items-center">
+                                        <ul class="my-auto">
+                                            <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="#products">PRODUCTS</a>
+                                            </li>
+                                            <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="#about">ABOUT</a>
+                                            </li>
+                                            <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="flavours.html" target="_blank">FLAVOURS</a>
+                                            </li>
+                                            <!-- <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="#contact">Contact</a>
+                                            </li> -->
+                                            <li class="d-block text-center my-2">
+                                                <a class="white mobile-nav-links" href="#distributors">DISTRIBUTORS</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile Menu col end-->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- HERO Sec Start -->
+        <section class="hero-sec">
+            <video class="hero-cover-video" autoplay muted poster="assets/images/smogPoster.png" loop>
+            <source src="assets/videos/smog.mp4" type="video/mp4" />
+            </video>
+            <div class="container-lg">
+                <div class="row hero-sec-content-row justify-content-center align-items-center">
+                    <div class="col-md-7 col-12">
+                        <h2 id="hero-head" class="neon-heading text-md-left text-center">KAT THE EXPERIENCE</h2>
+                        <p id="hero-para" class="py-4 text-md-left text-center text-white paras">
+                            Our vapes offers you the best experience when we talk about vaping, our team brought together a disposable vape that last long and also have a wided variety of flavors. Check out our complete lineup of disposable vape devices for every type of vaping
+                            experience. Check out our complete lineup of disposable vape devices for every type of vaping experience.
+                        </p>
+                        <a href="flavours.html" target="_blank" class="btn text-uppercase d-none d-md-block primary-btns">
+                        Learn More
+                    </a>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <div id="hero-slider" class="hero-right-img-slider">
+                            <div class="swiper-container hero-product-slider" id="prd-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide hero-product-slider-item">
+                                        <img src="assets/images/flavours/9.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide hero-product-slider-item">
+                                        <img src="assets/images/flavours/10.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide hero-product-slider-item">
+                                        <img src="assets/images/flavours/8.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-viewAll py-md-2">
+                                <a class="text-white d-none d-md-inline font-weight-bold" href="flavours.html" target="_blank">VIEW ALL</a> &nbsp;
+                                <img class="hero-prod-next d-lg-inline-block d-none" src="assets/images/icons/arrow.png" alt="Next" />
+                            </div>
+                            <a href="flavours.html" target="_blank" class="mt-3 btn text-uppercase d-md-none d-block primary-btns">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HERO Sec End -->
+
+        <!-- Second sec products slider Start-->
+        <section id="products">
+            <div class="container-fluid">
+                <h1 class="second-head text-center primary-text py-5 text-uppercase d-block d-lg-none"> OUR PRODUCTS</h1>
+                <div class="row sec-2-slider justify-content-center align-items-center px-0 py-0">
+                    <div class="col-lg-2 col-md-10 col-12 pagin px-sm-0 px-3 d-flex flex-row flex-lg-column"></div>
+                    <div class="col-lg-10 col-12 px-0 py-0 slider-2-right-col">
+                        <div class="row px-0 mx-0 position-relative py-0 px-0">
+                            <h1 class="pl-5 product-heading text-uppercase col-md-5 d-none d-lg-block">OUR PRODUCTS</h1>
+                            <div class="swiper sec-2-slider-self">
+                                <div class="swiper-wrapper">
+                                    <!-- slide 1 -->
+                                    <!-- <div class="swiper-slide w-100 d-block sec-2-slide-item">
+                                        <div class="row justify-content-center align-items-center mx-0 px-0 my-0 px-0">
+                                            <div class="col-lg-6 text-white text-center text-lg-left pl-5 pt-lg-0 pt-5">
+                                                <h3 class="text-uppercase font-weight-bold d-lg-block d-inline display-4 prd-title k-num">K4</h3>
+                                                <h6 class="after-head prd-info">CLASSICS NEVER GO OUT OF STYLE</h6>
+                                                <p class="col-lg-12 mx-lg-0 mx-auto col-12 text-center text-lg-left " style="color: #9b9b9b !important">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos optio incidunt ex dolore deserunt aut aliquid animi? Ullam earum, odit iste iure dicta beatae at quos! Architecto, fugit totam. Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Quasi quidem praesentium, similique reprehenderit tempora repellendus! Odio aut ducimus, corporis labore placeat optio itaque ad pariatur ut. Itaque nesciunt sint quisquam.
+                                                </p>
+                                                <a href="flavours.html" target="_blank" class="btn primary-btns slider-btn mb-lg-0 mb-5">EXPLORE FLAVOURS</a>
+                                            </div>
+                                            <div class="col-lg-6 px-0 mx-0">
+                                                <div class="sec-2-slider-right-prod">
+                                                    <img src="assets/images/flavours/1.png" alt="KATE" />
+                                                    <button class="btn sec-2-navigators left-navi">
+                                                        <img src="assets/images/icons/arrow-right.png" alt="Prev"/>
+                                                    </button>
+                                                    <button class="btn sec-2-navigators right-navi">
+                                                    <img src="assets/images/icons/arrow-right.png"alt="Next"/>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <!-- slide 2 -->
+                                    <div class="swiper-slide w-100 d-block sec-2-slide-item">
+                                        <div class="row justify-content-center align-items-center mx-0 px-0 my-0 px-0">
+                                            <div class="col-lg-6 text-white text-center text-lg-left pl-5 pt-lg-0 pt-5">
+                                                <!-- <h4 class="text-uppercase mt-5 d-lg-block d-inline display-4 prd-title">KAT</h4> -->
+                                                <h3 class="text-uppercase font-weight-bold d-lg-block d-inline display-4 prd-title k-num">K10</h3>
+                                                <h6 class="after-head prd-info">LONGER LASTING PUFFS ON THE GO</h6>
+                                                <p class="col-lg-12 mx-lg-0 mx-auto col-12 text-center text-lg-left " style="color: #9b9b9b !important">
+                                                    The k10 is our first product in the house! We came up with the perfect combination of flavor and usability, meaning that whenever you will use it, it will always deliver the purity tasty of the flavor and cloudy puffs for you to enjoy it.
+                                                </p>
+                                                <a href="flavours.html" class="btn primary-btns slider-btn mb-lg-0 mb-5">EXPLORE FLAVOURS</a>
+                                            </div>
+                                            <div class="col-lg-6 px-0 mx-0">
+                                                <div class="sec-2-slider-right-prod">
+                                                    <img src="assets/images/flavours/2.png" alt="KAT" />
+                                                    <button class="btn sec-2-navigators left-navi">
+                                                        <img src="assets/images/icons/arrow-right.png" alt="Prev"/>
+                                                    </button>
+                                                    <button class="btn sec-2-navigators right-navi">
+                                                    <img src="assets/images/icons/arrow-right.png"alt="Next"/>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide 3 -->
+                                    <div class="swiper-slide w-100 d-block sec-2-slide-item">
+                                        <div class="row justify-content-center align-items-center mx-0 px-0 my-0 px-0">
+                                            <div class="col-lg-6 text-white text-center text-lg-left pl-5 pt-lg-0 pt-5">
+                                                <!-- <h4 class="text-uppercase mt-5 d-lg-block d-inline display-4 prd-title">KAT</h4> -->
+                                                <h3 class="text-uppercase font-weight-bold d-lg-block d-inline display-4 prd-title k-num"> K16</h3>
+                                                <h6 class="after-head prd-info">Extreme Longevity At Its Finest</h6>
+                                                <p class="col-lg-12 mx-lg-0 blur-3 mx-auto col-12 text-center text-lg-left " style="color: #9b9b9b !important">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos optio incidunt ex dolore deserunt aut aliquid animi? Ullam earum, odit iste iure dicta beatae at quos! Architecto, fugit totam. Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Quasi quidem praesentium, similique reprehenderit tempora repellendus! Odio aut ducimus, corporis labore placeat optio itaque ad pariatur ut. Itaque nesciunt sint quisquam.
+                                                </p>
+                                                <a href="flavours.html" class="btn primary-btns slider-btn mb-lg-0 mb-5">EXPLORE FLAVOURS</a>
+                                            </div>
+                                            <div class="col-lg-6 px-0 mx-0">
+                                                <div class="sec-2-slider-right-prod">
+                                                    <img class="comming-soon-img blur" src="assets/images/flavours/k16.png" alt="KAT" />
+                                                    <h1 class="comming-head">COMING SOON</h1>
+                                                    <button class="btn sec-2-navigators left-navi">
+                                                        <img src="assets/images/icons/arrow-right.png" alt="Prev"/>
+                                                    </button>
+                                                    <button class="btn sec-2-navigators right-navi">
+                                                    <img src="assets/images/icons/arrow-right.png"alt="Next"/>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Second sec products slider End-->
+
+        <!-- Third section Start -->
+        <section id="about">
+            <div class="container mt-5 mb-5 py-0 py-lg-5">
+                <div class="row">
+                    <div class="col-lg-6 col-12 pt-5">
+                        <h1 class="ml-auto pt-3 text-center text-lg-left text-uppercase primary-text second-head">patented <b> TECHNOLOGY</b></h1>
+                    </div>
+                    <div class="col-lg-6 col-12 pt-5 text-center text-lg-left">
+                        <h6 class="after-head prd-info mt-0 text-white">More Tech Than Meets The Eye</h6>
+                        <p class="text-white px-3 px-lg-0">
+                            The main focus of our brand is to develop products that meet high end parameters! Thinking on that, we came up with the perfect balance of quality, airflow and battery durability.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Third section End -->
+
+        <!-- fourth sec start -->
+        <section class="fouth-sec" id="">
+            <div class="container-lg">
+                <div class="tabs-section">
+                    <div class="tabs-head">
+                        <!-- <div onclick="changeTab(0)" class="tab-title-box active-tab-title text-center text-uppercase">
+                            <h4>KAT k4</h4>
+                        </div> -->
+                        <div onclick="changeTab(0)" class="tab-title-box active-tab-title text-center text-uppercase">
+                            <h4>KAT K10</h4>
+                        </div>
+                        <div onclick="changeTab(1)" class="tab-title-box position-relative text-center text-uppercase">
+                            <h4>KAT K16</h4>
+                            <h3 class="comming-head">Coming soon</h3>
+                        </div>
+                    </div>
+                    <div class="tabs-body" data-aos="fade-up" data-aos-duration="500">
+                        <!-- Kat extra tab 1 -->
+                        <!-- <div class="tab-content fademy">
+                            <div class="bg-svg-ani">
+                                <svg>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                            <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite"></animate>
+                            <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite"></animate>
+                        </circle>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                            <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite" begin="0.75s"></animate>
+                            <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" begin="0.75s"></animate>
+                        </circle>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                            <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite" begin="1.5s"></animate>
+                            <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" begin="1.5s"></animate>
+                        </circle>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                            <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite" begin="2.25s"></animate>
+                            <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" begin="2.25s"></animate>
+                        </circle>
+                        </svg>
+                            </div>
+                            <div class="left-box">
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/time-extra.svg" alt="Time" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Long Lasting Pods</p>
+                                    <span>Delivering a rich, satisfying taste</span>
+                                </div>
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/audio-extra.svg" alt="Audio" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Quiet Draw</p>
+                                    <span>Silent, smooth and consistent</span>
+                                </div>
+                            </div>
+                            <div class="center-box">
+                                <img class="fadeUp" src="assets/images/flavours/5.png" alt="" />
+                            </div>
+                            <div class="right-box">
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/battery-extra.svg" alt="BAttery" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Everlasting Battery</p>
+                                    <span>Guaranteed to last until the flavor pod is empty</span>
+                                </div>
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/pencil-extra.svg" alt="Design" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Seamless Design</p>
+                                    <span>No buttons, charging ports or cartridges</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- Kat ultra tab 2 -->
+                        <div class="tab-content fademy">
+                            <div class="bg-svg-ani">
+                                <svg>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                            <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite"></animate>
+                            <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite"></animate>
+                        </circle>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                            <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite" begin="0.75s"></animate>
+                            <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" begin="0.75s"></animate>
+                        </circle>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                            <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite" begin="1.5s"></animate>
+                            <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" begin="1.5s"></animate>
+                        </circle>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                            <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite" begin="2.25s"></animate>
+                            <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" begin="2.25s"></animate>
+                        </circle>
+                        </svg>
+                            </div>
+                            <div class="left-box">
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/time-ultra.svg" alt="Time" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Longer-Lasting Pods</p>
+                                    <span>Delivering a rich, satisfying taste</span>
+                                </div>
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/time-ultra.svg" alt="Audio" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Quiet Draw</p>
+                                    <span>Silent, smooth and consistent</span>
+                                </div>
+                            </div>
+                            <div class="center-box">
+                                <img class="fademy" src="assets/images/flavours/6.png" alt="" />
+                            </div>
+                            <div class="right-box">
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/battery-ultra.svg" alt="BAttery" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Everlasting Battery</p>
+                                    <span>Guaranteed to last until the flavor pod is empty</span
+                        >
+                    </div>
+                    <div class="tab-content-box">
+                        <img
+                        src="assets/images/icons/pencil-ultra.svg"
+                        alt="Design"
+                        />
+                        <div class="bottom-line-tab"></div>
+                        <p>Seamless Design</p>
+                        <span>No buttons, charging ports or cartridges</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- kat infinity tab 3 -->
+                        <div class="tab-content d-none fademy">
+                            <div class="bg-svg-ani">
+                                <svg>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                        <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite"></animate>
+                        <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite"></animate>
+                        </circle>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                        <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite" begin="0.75s"></animate>
+                        <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" begin="0.75s"></animate>
+                        </circle>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                        <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite" begin="1.5s"></animate>
+                        <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" begin="1.5s"></animate>
+                        </circle>
+                        <circle cx="50%" cy="50%" r="0" fill-opacity="0" stroke="white" stroke-width="1px" stroke-opacity="1">
+                        <animate attributeName="r" from="0" to="300" dur="5s" repeatCount="indefinite" begin="2.25s"></animate>
+                        <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" begin="2.25s"></animate>
+                        </circle>
+                    </svg>
+                            </div>
+                            <div class="left-box">
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/time-infinity.svg" alt="Time" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Longest-Lasting Pods</p>
+                                    <span>Delivering a rich, satisfying taste</span>
+                                </div>
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/time-infinity.svg" alt="Audio" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Quiet Draw</p>
+                                    <span>Silent, smooth and consistent</span>
+                                </div>
+                            </div>
+                            <div class="center-box">
+                                <img class="fadeUp blur" src="assets/images/flavours/k16.png" alt="" />
+                            </div>
+                            <div class="right-box">
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/battery-infinity.svg" alt="BAttery" />
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Everlasting Battery</p>
+                                    <span>Guaranteed to last until the flavor pod is empty</span>
+                                </div>
+                                <div class="tab-content-box">
+                                    <img src="assets/images/icons/pencil-infinity.svg" alt="Design">
+                                    <div class="bottom-line-tab"></div>
+                                    <p>Seamless Design</p>
+                                    <span>No buttons, charging ports or cartridges</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fourth sec end -->
+
+        <!-- fifth sec start -->
+        <!-- <section class="fifth-sec">
+            <div class="container-lg">
+                <h2 id="hero-head" class="neon-heading text-center">PRODUCT<br />AUTHENTICATION</h2>
+                <p class="after-head text-center text-white px-5 form-para">
+                    Check to see if your Kate products is an original and authentic product.
+                </p>
+                <form onsubmit="skuForm(event)" class="text-center py-5 sku-form">
+                    <input type="text" class="kate-input" id="skuinput" name="skuinput" placeholder="Input your product SKU code" />
+                    <input type="submit" class="btn primary-btns text-uppercase font-weight-bold" value="Check SKU" />
+                </form>
+            </div>
+        </section> -->
+        <!-- fifth sec end -->
+
+        <!-- form sec start -->
+        <section class="form-sec" id="distributors">
+            <div class="container-lg">
+                <h2 id="hero-head" class="neon-heading text-center">JOIN THE <br />KAT REVOLUTION</h2>
+                <p class="after-head text-center text-white px-5 form-para">
+                    If you are interested in becoming a distributor for KAT, please reach out to us below.
+                </p>
+                <form action="" onsubmit="skuForm(event)">
+                    <div class="row mt-5 py-2 py-lg-5 px-3 px-lg-5">
+                        <div class="col-md-6 col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" placeholder="First Name" id="" />
+                        </div>
+                        <div class="col-md-6 col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" placeholder="Last Name" id="" />
+                        </div>
+                        <div class="col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" placeholder="Business Name" id="" />
+                        </div>
+                        <div class="col-md-6 col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" placeholder="Email Address" id="" />
+                        </div>
+                        <div class="col-md-6 col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" placeholder="Phone Number" id="" />
+                        </div>
+                        <div class="col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" id="" placeholder="Address" />
+                        </div>
+                        <div class="col-md-4 col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" id="" class="kate-input" placeholder="City" />
+                        </div>
+                        <div class="col-md-4 col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" id="" class="kate-input" placeholder="State" />
+                        </div>
+                        <div class="col-md-4 col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" id="" class="kate-input" placeholder="Zip Code" />
+                        </div>
+                        <div class="col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" id="" placeholder="Select Country" />
+                        </div>
+                        <div class="col-md-8 col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" placeholder="Which Product Are You Interest In?" />
+                        </div>
+                        <div class="col-md-4 col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" placeholder="Quantity" />
+                        </div>
+                        <div class="col-12 my-2 mx-0 px-0 py-2">
+                            <input type="text" name="" class="kate-input" placeholder="Tell About Your Business" />
+                        </div>
+                        <div class="col-12 mt-1 py-4 py-lg-5 text-center">
+                            <input type="submit" class="btn mx-auto primary-btns text-uppercase font-weight-bold" value="Check SKU" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- form sec end -->
+
+        <!-- Footer start -->
+        <footer>
+            <div class="container-lg py-5">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-lg-4 d-flex justify-content-center py-3 px-2 align-items-center">
+                        <a href="https://instagram.com/kat_vapes?utm_medium=copy_link">
+                            <img class="px-3 btn" src="assets/images/icons/soc-1.svg" alt="Instagram" />
+                        </a>
+                        <!-- <img class="px-3 btn" src="assets/images/icons/soc-2.svg" alt="facebook" /> -->
+                        <!-- <img class="px-3 btn" src="assets/images/icons/soc-3.svg" alt="twitter" /> -->
+                    </div>
+                    <div class="col-lg-8">
+                        <ul class="d-md-flex d-block pt-2 justify-content-end align-items-center">
+                            <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="#about">ABOUT</a>
+                            </li>
+                            <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="#products">PRODUCTS</a>
+                            </li>
+                            <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="flavours.html" target="_blank">FLAVOURS</a>
+                            </li>
+                            <!-- <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="#contact">Contact</a>
+                            </li> -->
+                            <li class="d-md-inline-block d-block mx-2 text-center my-2">
+                                <a class="text-white mobile-nav-links" href="#distributors">DISTRIBUTORS</a>
+                            </li>
+                            <!-- <a class="email-icon-top d-md-flex d-none ml-2" href="">
+                                <img class="my-auto mx-auto" src="assets//images/icons/email.svg" alt="KAT" />
+                            </a> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 px-3 pt-3 mt-2">
+                        <span class="text-white d-block mx-auto text-center">© 2021 KAT All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+
+    <!-- Starting video sec Start -->
+    <section data-aos="fade" class="starting-video-sec" id="onLoadScreen">
+        <div class="top-warning">
+            <div class="container-fluid">
+                <span>WARNING: </span> This product contains nicotine. Nicotine is an addictive chemical.
+            </div>
+        </div>
+        <video data-aos-delay="500" data-aos="fade" class="hero-cover-video" autoplay muted poster="assets/images/smogPoster.png" loop>
+            <source src="assets/videos/smog.mp4" type="video/mp4" />
+        </video>
+        <div class="container">
+            <div class="row content d-flex flex-column justify-content-center align-items-center">
+                <div data-aos-duration="500" data-aos-delay="700" data-aos="zoom-in" class="logo starting-logo">
+                    <img src="assets/images/logo/logo.svg" alt="" />
+                </div>
+                <h2 data-aos-duration="500" data-aos-delay="450" data-aos="fade-up" class="neon-heading text-center">
+                    KAT THE EXPERIENCE
+                </h2>
+                <div data-aos="fade" data-aos-delay="200" class="scrol-to-dicover" onclick="showWeb(event,true)">
+                    <h6 class="text-uppercase text-white">SCROLL TO DISCOVER</h6>
+                    <img src="assets/images/icons/arrow.png" alt="Scroll down" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Starting video sec End -->
+
+    <!-- Age ask Pop up Start-->
+    <section class="age-ask-popup d-none fademy">
+        <div class="age-pop fademy">
+            <div class="age-logo fademy fadeUp">
+                <img src="assets/images/logo/logo.png" alt="KAT" />
+            </div>
+            <div class="age-pop-qs fademy">
+                <p class="text-white text-center mt5">Are you 21 years of age older?</p>
+            </div>
+            <div class="loader"></div>
+            <p class="invalid-feedback age-error mx-auto text-center d-none">
+                You are not old enough to view this content
+            </p>
+            <div class="age-pop-btns text-center mt-4 fademy">
+                <button class="btn btn-outline-light rounded-pill px-4 text-uppercase" id="yesBtn">YES</button> &nbsp;
+                <button class="btn btn-outline-light rounded-pill px-4 text-uppercase" id="noBtn">NO</button>
+            </div>
+        </div>
+        <div class="over-lay-of-pop"></div>
+    </section>
+    <!-- Age ask Pop up End-->
+
+
+    <!-- scripts -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="assets/js/app.js"></script>
+    <script>
+        var swiper = new Swiper(".hero-product-slider", {
+            loop: true,
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: ".hero-prod-next",
+            },
+            slidesPerView: 1,
+        });
+        var menu = ["K10", "K16"];
+        var imgs = ["2.png", "k16.png"];
+        var swiper2 = new Swiper(".sec-2-slider-self", {
+                    loop: true,
+                    observer: true,
+                    observeParents: true,
+                    navigation: {
+                        nextEl: ".right-navi",
+                        prevEl: ".left-navi",
+                    },
+                    pagination: {
+                        el: ".pagin",
+                        clickable: true,
+                        renderBullet: function(index, className) {
+                                return `<div class="${className} ptab ${index === 1 ? 'comming-head-small blur-3' : ''} ">
+            <img src="assets/images/flavours/${imgs[index]}" alt="KAT ${menu[index]}">
+            <p class="text-center text-white text-uppercase my-3"><span class="font-weight-bold">${menu[index]}</span></p>
+                ${index === 1 ?
+                    `<h3 class="">COMING SOON</h3>`
+                    : ""}
+            </div>`;
+                },
+            },
+            slidesPerView: 1,
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="36" viewBox="0 0 18 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #db9681;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="battery-11" class="cls-1" d="M1248.77,3897.5l6.73-9.89h-3.91l1.94-6.61-7.03,9.6h4.26Zm6.73-25.5v-1.13a1.876,1.876,0,0,0-1.88-1.87h-5.25a1.874,1.874,0,0,0-1.87,1.87V3872h9Zm-13.5,1.5V3905h18v-31.5h-18Zm3,3h12V3902h-12v-25.5Z" transform="translate(-1242 -3869)"/>
+</svg>

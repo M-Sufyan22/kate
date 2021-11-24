@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #db9681 ;
+        <!-- fill: #7AD232; -->
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="pencil-8" class="cls-1" d="M1260,4078.53l-4.22,4.23-8.54-8.54,4.22-4.22Zm-27.42,23.17-1.28-1.28,16.71-16.68,1.28,1.27Zm-3.02-3.01-1.27-1.28,16.71-16.69,1.27,1.28Zm15.56-22.34-18.96,18.96L1224,4106l10.69-2.16,18.96-18.96Z" transform="translate(-1224 -4070)"/>
+</svg>

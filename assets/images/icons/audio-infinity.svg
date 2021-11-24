@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43.188" height="36" viewBox="0 0 43.188 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #FA017C;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="audio-10" class="cls-1" d="M220.584,4019.98l2.963-2.98-2.383-2.38-2.973,3-3-2.96-2.369,2.37,3.005,2.98-2.97,3.01,2.373,2.37,2.985-3.01,3,2.97,2.384-2.38ZM189.4,4011h-9v18h9v-18Zm19.8-9-16.2,9v4.12l12.6-7v23.76l-12.6-7V4029l16.2,9v-36Zm-23.4,12.6v10.8H184v-10.8h1.8Z" transform="translate(-180.406 -4002)"/>
+</svg>
